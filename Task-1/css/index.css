@@ -1,0 +1,1725 @@
+
+/* =========================
+   1. BASIC STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* =========================
+   2. HEADER AND NAVBAR
+========================= */
+
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #172554;
+}
+
+.logo span {
+    color: #6c5ce7;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #333333;
+    font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #6c5ce7;
+}
+
+.nav-links .nav-cta {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* =========================
+   3. HERO SECTION
+========================= */
+
+.hero {
+    background-color: #f5f6ff;
+    padding: 70px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.eyebrow {
+    color: #6c5ce7;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #172554;
+}
+
+.hero h1 span,
+.section-heading h2 span {
+    color: #6c5ce7;
+}
+
+.hero-description {
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid #6c5ce7;
+    color: #6c5ce7;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.hero-trust {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    color: #555555;
+}
+
+.trust-icon {
+    color: #22a06b;
+}
+
+/* =========================
+   4. HERO ILLUSTRATION
+========================= */
+
+.hero-visual {
+    position: relative;
+    padding: 35px;
+    background-color: #e7e5ff;
+    border-radius: 12px;
+}
+
+.visual-glow {
+    display: none;
+}
+
+.main-visual-card {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.visual-card-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 25px;
+}
+
+.window-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-one {
+    background-color: #ef4444;
+}
+
+.dot-two {
+    background-color: #f59e0b;
+}
+
+.dot-three {
+    background-color: #22c55e;
+}
+
+.visual-label {
+    margin-left: auto;
+    color: #555555;
+    font-size: 13px;
+}
+
+.visual-icon {
+    font-size: 48px;
+    color: #6c5ce7;
+    margin-bottom: 15px;
+}
+
+.main-visual-card h2 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.main-visual-card p {
+    color: #666666;
+}
+
+.visual-progress {
+    height: 8px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+
+.visual-progress span {
+    display: block;
+    width: 75%;
+    height: 100%;
+    background-color: #6c5ce7;
+    border-radius: 5px;
+}
+
+.visual-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.visual-tags span {
+    background-color: #f0edff;
+    color: #5143b8;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.floating-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+.floating-card i {
+    color: #6c5ce7;
+    font-size: 22px;
+}
+
+.floating-card strong,
+.floating-card small {
+    display: block;
+}
+
+.floating-card small {
+    color: #666666;
+}
+
+/* =========================
+   5. STATS SECTION
+========================= */
+
+.stats-section {
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-item i {
+    font-size: 26px;
+    color: #6c5ce7;
+}
+
+.stat-item h2 {
+    font-size: 18px;
+    color: #172554;
+}
+
+.stat-item p {
+    font-size: 13px;
+    color: #666666;
+}
+
+/* =========================
+   6. COMMON SECTION STYLING
+========================= */
+
+.section-padding {
+    padding: 65px 0;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #666666;
+}
+
+/* =========================
+   7. FEATURES SECTION
+========================= */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.feature-card {
+    padding: 25px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.icon-purple {
+    background-color: #eeeaff;
+    color: #6c5ce7;
+}
+
+.icon-blue {
+    background-color: #e4f0ff;
+    color: #2878d0;
+}
+
+.icon-green {
+    background-color: #e2f8ed;
+    color: #168b58;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+.feature-card p {
+    color: #666666;
+    margin-bottom: 18px;
+}
+
+.text-link {
+    color: #6c5ce7;
+    font-weight: bold;
+}
+
+/* =========================
+   8. SERVICES SECTION
+========================= */
+
+.services-preview {
+    background-color: #f7f8fc;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-icon {
+    color: #6c5ce7;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #666666;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* =========================
+   9. CALL TO ACTION
+========================= */
+
+.cta-section {
+    background-color: #252052;
+    color: white;
+    padding: 45px 0;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.cta-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cta-content p {
+    color: #eeeeee;
+}
+
+.btn-light {
+    background-color: white;
+    color: #252052;
+    white-space: nowrap;
+}
+
+/* =========================
+   10. FOOTER
+========================= */
+
+.footer {
+    background-color: #172033;
+    color: white;
+    padding-top: 45px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 35px;
+}
+
+.footer-brand p {
+    margin-top: 15px;
+    color: #cccccc;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column li {
+    margin-bottom: 9px;
+}
+
+.footer-column a,
+.footer-column p {
+    color: #cccccc;
+}
+
+.footer-column a:hover,
+.footer a:hover {
+    color: #b9afff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 18px;
+    font-size: 22px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 0;
+    border-top: 1px solid #394154;
+    color: #cccccc;
+    font-size: 14px;
+}
+
+/* =========================
+   11. MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    /* JavaScript should add the "show" class
+       when the menu button is clicked. */
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero-visual {
+        padding: 15px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+/* =================================
+   ABOUT PAGE
+================================= */
+
+/* About page banner */
+.page-banner {
+    background-color: #f5f6ff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 38px;
+    line-height: 1.3;
+    color: #172554;
+}
+
+.page-banner h1 span {
+    color: #6c5ce7;
+}
+
+.page-banner > .container > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #6c5ce7;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+/* About introduction */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-content h2 {
+    margin: 12px 0 20px;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #172554;
+}
+
+.about-content h2 span {
+    color: #6c5ce7;
+}
+
+.about-content > p:not(.eyebrow) {
+    margin-bottom: 16px;
+    color: #555;
+}
+
+.about-content .btn {
+    margin-top: 10px;
+}
+
+/* About highlight card */
+.about-visual {
+    padding: 30px;
+    background-color: #eeeaff;
+    border-radius: 10px;
+}
+
+.about-decoration {
+    display: none;
+}
+
+.about-highlight {
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.about-main-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #eeeaff;
+    color: #6c5ce7;
+    font-size: 25px;
+}
+
+.about-highlight h3 {
+    margin: 12px 0;
+    color: #172554;
+    font-size: 22px;
+}
+
+.about-highlight > p:not(.eyebrow) {
+    color: #555;
+}
+
+.philosophy-points {
+    margin-top: 22px;
+}
+
+.philosophy-points div {
+    margin-top: 12px;
+    color: #333;
+}
+
+.philosophy-points i {
+    margin-right: 8px;
+    color: #168b58;
+}
+
+/* Mission, vision and values */
+.values-section {
+    background-color: #f7f8fc;
+}
+
+.value-card {
+    position: relative;
+}
+
+.card-number {
+    display: block;
+    margin-bottom: 12px;
+    color: #6c5ce7;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.value-card h3 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.value-card > p {
+    color: #555;
+}
+
+/* Our approach */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.approach-item {
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.approach-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    background-color: #eeeaff;
+    color: #6c5ce7;
+    font-size: 21px;
+}
+
+.approach-item h3 {
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+.approach-item p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* Team section */
+.team-section {
+    background-color: #f7f8fc;
+}
+
+.team-card {
+    text-align: center;
+}
+
+.team-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.avatar-purple {
+    background-color: #eeeaff;
+    color: #6c5ce7;
+}
+
+.avatar-blue {
+    background-color: #e4f0ff;
+    color: #2878d0;
+}
+
+.avatar-green {
+    background-color: #e2f8ed;
+    color: #168b58;
+}
+
+.team-role {
+    margin-bottom: 8px;
+    color: #6c5ce7;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.team-card h3 {
+    margin-bottom: 6px;
+    color: #172554;
+}
+
+.team-card > p:last-child {
+    color: #666;
+}
+
+.team-note {
+    margin-top: 25px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.team-note i {
+    margin-right: 5px;
+    color: #6c5ce7;
+}
+
+/* About page call to action */
+.cta-content .eyebrow {
+    color: #c5bdff;
+}
+
+.cta-content h2 {
+    color: white;
+}
+
+.cta-content > div > p:last-child {
+    color: #eee;
+}
+
+/* Responsive About page */
+@media (max-width: 900px) {
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-banner {
+        padding: 40px 0;
+    }
+
+    .page-banner h1 {
+        font-size: 29px;
+    }
+
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+    .about-visual {
+        padding: 15px;
+    }
+
+    .about-highlight {
+        padding: 20px;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .breadcrumb {
+        flex-wrap: wrap;
+    }
+}
+
+/* =================================
+   CONTACT PAGE
+================================= */
+
+/* Contact page banner */
+.contact-banner {
+    background-color: #f5f6ff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-banner h1 {
+    font-size: 38px;
+    color: #172554;
+    margin: 15px 0;
+}
+
+.contact-banner h1 span {
+    color: #6c5ce7;
+}
+
+.contact-banner > .container > p:not(.eyebrow) {
+    color: #555;
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #6c5ce7;
+}
+
+/* Main contact layout */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Contact information heading */
+.contact-info h2 {
+    font-size: 30px;
+    line-height: 1.4;
+    color: #172554;
+    margin: 12px 0 18px;
+}
+
+.contact-info h2 span {
+    color: #6c5ce7;
+}
+
+.contact-intro {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Email, location and working hours */
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 18px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.detail-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.contact-detail h3 {
+    color: #172554;
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    color: #333;
+    overflow-wrap: anywhere;
+}
+
+.contact-detail span {
+    display: block;
+    margin-top: 4px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Contact note */
+.contact-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f6ff;
+    border-radius: 6px;
+    color: #555;
+    font-size: 14px;
+}
+
+.contact-note i {
+    color: #6c5ce7;
+    margin-top: 5px;
+}
+
+/* =================================
+   CONTACT FORM
+================================= */
+
+.contact-form-card {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+/* Form heading */
+.form-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.form-heading-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: #eeeaff;
+    color: #6c5ce7;
+    font-size: 21px;
+}
+
+.form-heading h2 {
+    color: #172554;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.form-heading p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #222;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 45px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #c5bdff;
+    border-color: #6c5ce7;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #888;
+}
+
+/* Message hint */
+.field-hint {
+    display: block;
+    margin-top: 6px;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Submit button */
+.form-submit {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.form-submit i {
+    margin-left: 8px;
+}
+
+/* Form feedback message */
+.form-feedback {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #168b58;
+}
+
+/* Privacy note */
+.form-privacy {
+    margin-top: 18px;
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+}
+
+.form-privacy i {
+    margin-right: 5px;
+    color: #6c5ce7;
+}
+
+/* =================================
+   CONTACT PAGE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-banner {
+        padding: 40px 0;
+    }
+
+    .contact-banner h1 {
+        font-size: 30px;
+    }
+
+    .contact-info h2 {
+        font-size: 26px;
+    }
+
+    .contact-form-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-card {
+        padding: 16px;
+    }
+
+    .form-heading h2 {
+        font-size: 19px;
+    }
+
+    .contact-detail {
+        padding: 14px;
+    }
+}
+
+/* =====================================
+   SERVICES PAGE
+===================================== */
+
+/* 1. Services banner */
+.services-banner {
+    background-color: #f5f6ff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-banner h1 {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 38px;
+    line-height: 1.3;
+    color: #172554;
+}
+
+.services-banner h1 span {
+    color: #6c5ce7;
+}
+
+.services-banner > .container > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555555;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #6c5ce7;
+}
+
+.breadcrumb span {
+    color: #666666;
+}
+
+/* 2. Services section */
+.services-section {
+    background-color: #ffffff;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 12px 0;
+    font-size: 32px;
+    color: #172554;
+}
+
+.section-heading h2 span {
+    color: #6c5ce7;
+}
+
+.section-heading > p:last-child {
+    color: #666666;
+}
+
+/* 3. Services cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* Icon inside each card */
+.service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+/* Different icon colors */
+.icon-purple {
+    background-color: #eeeaff;
+    color: #6c5ce7;
+}
+
+.icon-blue {
+    background-color: #e4f0ff;
+    color: #2878d0;
+}
+
+.icon-green {
+    background-color: #e2f8ed;
+    color: #168b58;
+}
+
+.icon-orange {
+    background-color: #fff0df;
+    color: #e68a22;
+}
+
+.icon-pink {
+    background-color: #ffe8f0;
+    color: #d94680;
+}
+
+.icon-cyan {
+    background-color: #e0f7fa;
+    color: #0891b2;
+}
+
+/* Card number and category */
+.service-number {
+    display: block;
+    margin-bottom: 10px;
+    color: #6c5ce7;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Card heading and description */
+.service-card h3 {
+    margin-bottom: 12px;
+    font-size: 21px;
+    color: #172554;
+}
+
+.service-card > p {
+    margin-bottom: 18px;
+    color: #555555;
+    font-size: 15px;
+}
+
+/* Features inside each service */
+.service-features {
+    margin-bottom: 22px;
+    list-style: none;
+}
+
+.service-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 10px;
+    color: #444444;
+    font-size: 14px;
+}
+
+.service-features li i {
+    margin-top: 5px;
+    color: #168b58;
+}
+
+/* Link at the bottom of each card */
+.service-link {
+    display: inline-block;
+    color: #6c5ce7;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.service-link i {
+    margin-left: 5px;
+}
+
+.service-link:hover {
+    color: #4535b5;
+}
+
+/* 4. Work process section */
+.approach-section {
+    background-color: #f7f8fc;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.approach-item {
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.approach-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    background-color: #eeeaff;
+    color: #6c5ce7;
+    border-radius: 6px;
+    font-size: 21px;
+}
+
+.approach-item h3 {
+    margin-bottom: 10px;
+    color: #172554;
+    font-size: 18px;
+}
+
+.approach-item p {
+    color: #555555;
+    font-size: 14px;
+}
+
+/* 5. Call-to-action section */
+.cta-section {
+    padding: 45px 0;
+    background-color: #252052;
+    color: #ffffff;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.cta-content h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.cta-content > div > p:last-child {
+    color: #eeeeee;
+}
+
+.cta-content .eyebrow {
+    color: #c5bdff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #252052;
+    white-space: nowrap;
+}
+
+.btn-light:hover {
+    background-color: #eeeaff;
+}
+
+/* 6. Responsive design for tablets */
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-content {
+        align-items: flex-start;
+    }
+}
+
+/* 7. Responsive design for mobile phones */
+@media (max-width: 600px) {
+    .services-banner {
+        padding: 40px 0;
+    }
+
+    .services-banner h1 {
+        font-size: 29px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .approach-item {
+        padding: 20px;
+    }
+
+    .cta-content {
+        flex-direction: column;
+    }
+
+    .cta-content h2 {
+        font-size: 24px;
+    }
+}
+
+/* TechNova - Modern Corporate Theme */
+
+:root {
+    --bg: #F3F8FC;
+    --white: #FFFFFF;
+    --navy: #17324D;
+    --text: #526579;
+    --accent: #0F8B8D;
+    --border: #DCE8F2;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--navy);
+}
+
+.site-header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    color: var(--navy);
+}
+
+.nav-links a {
+    color: var(--navy);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.btn, .nav-cta, .form-submit {
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover, .nav-cta:hover, .form-submit:hover {
+    background: var(--navy);
+}
+
+.hero, .page-banner, .services-banner, .contact-banner {
+    background: #E5F0F8;
+}
+
+.service-card, .info-card, .contact-form-card,
+.contact-info, .approach-item, .feature-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(23, 50, 77, 0.06);
+    transition: transform 0.25s ease;
+}
+
+.service-card:hover, .info-card:hover,
+.approach-item:hover, .feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.service-icon, .approach-icon {
+    color: var(--accent);
+}
+
+input, textarea, select {
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--accent);
+}
+
+.footer {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.footer h3, .footer a {
+    color: var(--white);
+}
+
+.footer a:hover {
+    color: #7DE0D2;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .services-grid, .feature-grid, .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-grid, .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .services-grid, .feature-grid, .stats-grid,
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero h1 {
+        font-size: clamp(28px, 7vw, 38px);
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        background: var(--white);
+        gap: 15px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card, .info-card, .contact-form-card {
+        padding: 18px;
+    }
+
+    .btn, .nav-cta {
+        padding: 10px 15px;
+    }
+}

@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact TechNova Solutions to discuss your website, UI/UX design, and digital development project.">
+
+    <meta name="theme-color" content="#0b1120">
+
+    <title>Contact Us | TechNova Solutions</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="index.html" class="logo" aria-label="TechNova home">
+                TechNova<span>.</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+
+                <li>
+                    <a href="contact.html"
+                       class="active"
+                       aria-current="page">Contact Us</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= CONTACT HERO ================= -->
+        <section class="page-banner contact-banner">
+            <div class="container">
+
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    LET'S CONNECT
+                </p>
+
+                <h1>
+                    Let's Start a
+                    <span>Conversation.</span>
+                </h1>
+
+                <p>
+                    Have a question, a creative idea, or a project in mind?
+                    We'd love to hear from you.
+                </p>
+
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"
+                       aria-hidden="true"></i>
+                    <span>Contact</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section class="contact-section section-padding">
+            <div class="container contact-grid">
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+
+                    <p class="eyebrow">GET IN TOUCH</p>
+
+                    <h2>
+                        Let's Discuss
+                        <span>Your Next Big Idea.</span>
+                    </h2>
+
+                    <p class="contact-intro">
+                        Tell us what you're planning. Whether you need a
+                        website, a better user experience, or a digital
+                        solution, this is the place to start.
+                    </p>
+
+
+                    <!-- Email Card -->
+                    <article class="contact-detail">
+                        <div class="detail-icon icon-purple">
+                            <i class="fa-regular fa-envelope"
+                               aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>hello@technova.example</p>
+                            <span>For general project enquiries</span>
+                        </div>
+                    </article>
+
+
+                    <!-- Location Card -->
+                    <article class="contact-detail">
+                        <div class="detail-icon icon-blue">
+                            <i class="fa-solid fa-location-dot"
+                               aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>TechNova Solutions, India</p>
+                            <span>Serving digital needs online</span>
+                        </div>
+                    </article>
+
+
+                    <!-- Working Hours Card -->
+                    <article class="contact-detail">
+                        <div class="detail-icon icon-green">
+                            <i class="fa-regular fa-clock"
+                               aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday – Friday</p>
+                            <span>9:00 AM – 5:00 PM</span>
+                        </div>
+                    </article>
+
+
+                    <!-- Contact Note -->
+                    <div class="contact-note">
+                        <i class="fa-solid fa-circle-info"
+                           aria-hidden="true"></i>
+
+                        <p>
+                            TechNova Solutions is a fictional company for
+                            this project. Contact details are sample data.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- ================= CONTACT FORM ================= -->
+                <div class="contact-form-card">
+
+                    <div class="form-heading">
+                        <div class="form-heading-icon">
+                            <i class="fa-regular fa-paper-plane"
+                               aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+                            <h2>Send Us a Message</h2>
+                            <p>Fill out the form and share your ideas.</p>
+                        </div>
+                    </div>
+
+
+                    <form id="contactForm">
+
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                minlength="2"
+                                maxlength="100"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+
+                        <!-- Subject -->
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is your message about?"
+                                minlength="3"
+                                maxlength="150"
+                                required>
+                        </div>
+
+
+                        <!-- Service Selection -->
+                        <div class="form-group">
+                            <label for="service">
+                                What can we help you with?
+                            </label>
+
+                            <select id="service" name="service" required>
+                                <option value="" selected disabled>
+                                    Select a service
+                                </option>
+
+                                <option value="web-development">
+                                    Web Development
+                                </option>
+
+                                <option value="ui-ux-design">
+                                    UI/UX Design
+                                </option>
+
+                                <option value="digital-solutions">
+                                    Digital Solutions
+                                </option>
+
+                                <option value="other">
+                                    Other Enquiry
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                minlength="10"
+                                maxlength="2000"
+                                placeholder="Tell us about your idea or project..."
+                                required></textarea>
+
+                            <small class="field-hint">
+                                Please enter at least 10 characters.
+                            </small>
+                        </div>
+
+
+                        <!-- Submit -->
+                        <button type="submit"
+                                class="btn btn-primary form-submit">
+                            Send Message
+                            <i class="fa-solid fa-arrow-right"
+                               aria-hidden="true"></i>
+                        </button>
+
+                        <!-- Accessible feedback -->
+                        <p id="formFeedback"
+                           class="form-feedback"
+                           role="status"
+                           aria-live="polite"></p>
+
+                        <p class="form-privacy">
+                            <i class="fa-solid fa-shield-halved"
+                               aria-hidden="true"></i>
+                            Your information is used for this demo form only.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= BOTTOM CTA ================= -->
+        <section class="cta-section">
+            <div class="container cta-content">
+
+                <div>
+                    <p class="eyebrow">YOUR NEXT STEP STARTS HERE</p>
+
+                    <h2>Great Things Begin With an Idea.</h2>
+
+                    <p>
+                        Explore what we do and discover how thoughtful
+                        digital experiences can bring ideas to life.
+                    </p>
+                </div>
+
+                <a href="services.html" class="btn btn-light">
+                    Explore Services
+                    <i class="fa-solid fa-arrow-right"
+                       aria-hidden="true"></i>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    TechNova<span>.</span>
+                </a>
+
+                <p>
+                    Building meaningful digital experiences through
+                    creativity, technology, and innovation.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/"
+                       aria-label="GitHub"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"
+                           aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/"
+                       aria-label="LinkedIn"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"
+                           aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                       aria-label="Instagram"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"
+                           aria-hidden="true"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li><a href="services.html">Web Development</a></li>
+                    <li><a href="services.html">UI/UX Design</a></li>
+                    <li><a href="services.html">Digital Solutions</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Get in Touch</h3>
+
+                <p>
+                    <i class="fa-regular fa-envelope"
+                       aria-hidden="true"></i>
+                    <a href="contact.html">Contact our team</a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-globe"
+                       aria-hidden="true"></i>
+                    Digital solutions, everywhere.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom container">
+            <p>
+                &copy; 2026 TechNova Solutions. All rights reserved.
+            </p>
+
+            <p>Designed with care. Built for the future.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
